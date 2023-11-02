@@ -7,8 +7,10 @@
     <list default="true" id="1edc857c-3ae3-4aec-bb20-7775efb4c8cf" name="Changes" comment="half ready">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Timetable/Timetable.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Timetable/Timetable.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Timetable/DayOfWeek.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Timetable/DayOfWeek.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Timetable/Lesson.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Timetable/Lesson.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Timetable/TimetableGroup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Timetable/TimetableGroup.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/timetable.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/timetable.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +77,7 @@
       <workItem from="1698822851788" duration="105000" />
       <workItem from="1698913270700" duration="20000" />
       <workItem from="1698914674296" duration="6198000" />
-      <workItem from="1698933400475" duration="19523000" />
+      <workItem from="1698933400475" duration="26120000" />
     </task>
     <task id="LOCAL-00001" summary="ghgh">
       <option name="closed" value="true" />
@@ -157,7 +159,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698951256910</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="half ready">
+      <option name="closed" value="true" />
+      <created>1698953671583</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1698953671583</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

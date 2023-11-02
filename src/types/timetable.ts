@@ -10,7 +10,7 @@ interface Group {
     name: string
 }
 
-interface TimetableCell {
+export interface TimetableCell {
     timeTableCellId: number
     lessonTime: LessonTime
     lessonTimeId: number
@@ -61,7 +61,6 @@ interface ReplacingTimeTableCell {
     subject: Subject
     subjectId: number
     isReplaced: boolean
-    replacingTimeTableCell: any
 }
 
 
