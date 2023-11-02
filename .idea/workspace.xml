@@ -5,18 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1edc857c-3ae3-4aec-bb20-7775efb4c8cf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/pages/Timetable.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/styles/Timetable.modules.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/http/api/TimetableAPI.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/timetable.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Timetable/Timetable.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/global.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/start/Start.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/http/api/UserAPI.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/http/api/UserAPI.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/http/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/http/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Timetable.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/styles/Timetable.modules.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +24,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -43,15 +41,17 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Users\\Student\\Desktop\\frontend\\node_modules\\typescript\\lib",
+    "ts.external.directory.path": "X:\\frontend\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -75,6 +75,7 @@
       <workItem from="1698822851788" duration="105000" />
       <workItem from="1698913270700" duration="20000" />
       <workItem from="1698914674296" duration="6198000" />
+      <workItem from="1698933400475" duration="4213000" />
     </task>
     <servers />
   </component>

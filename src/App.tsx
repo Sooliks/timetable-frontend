@@ -1,33 +1,19 @@
-import React, {useEffect, useState} from 'react';
-import classes from './Main.module.css'
-import {createGlobalStyle} from "styled-components";
+import React, {useState} from 'react';
+import {DarkThemeStyle, LightThemeStyle} from "./global";
+import './Main.css'
+import Header from "./components/Header";
+import Timetable from "./components/Timetable/Timetable";
 
 function App() {
     const [currentTheme,setCurrentTheme] = useState<'dark' | 'default'>('dark')
-    let GlobalStyles = createGlobalStyle`
-      body{
-        background: linear-gradient(#CCFF00, #FFA800, #D200FF, #6100FF);
-      }
-    `
-    useEffect(()=>{
-        if(currentTheme === 'default'){
-            GlobalStyles = createGlobalStyle`
-              body{
-                background: linear-gradient(#CCFF00, #FFA800, #D200FF, #6100FF);
-              }
-            `
-        }
-        if(currentTheme === 'dark'){
-            GlobalStyles = createGlobalStyle`
-              body{
-                background: linear-gradient(#CCFF00, #FFA800, #D200FF, #6100FF);
-              }
-            `
-        }
-    },[currentTheme])
+
+    const [currentGroupId, setCurrentGroupId] = useState<number | null>(null)
+
   return (
     <div className="App">
-        <GlobalStyles/>
+        {currentTheme === 'dark' ? <DarkThemeStyle/> : <LightThemeStyle/>}
+        <Header onChangeGroup={(id)=>setCurrentGroupId(id)} />
+        <Timetable currentGroupId={currentGroupId}/>
     </div>
   );
 }
