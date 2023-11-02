@@ -1,4 +1,4 @@
-export interface Timetable {
+export type TimetableType = {
     timetableId: number
     group: Group
     groupId: number
@@ -50,44 +50,18 @@ export interface Subject {
     subjectId: number
     name: string
 }
-
 export interface ReplacingTimeTableCell {
     timeTableCellId: number
-    lessonTime: LessonTime2
+    lessonTime: LessonTime
     lessonTimeId: number
-    cabinet: Cabinet2
+    cabinet: Cabinet
     cabinetId: number
-    teacher: Teacher2
+    teacher: Teacher
     teacherId: number
-    subject: Subject2
+    subject: Subject
     subjectId: number
     isReplaced: boolean
     replacingTimeTableCell: any
 }
 
-export interface LessonTime2 {
-    lessonTimeId: number
-    lessonNumber: number
-    dayOfWeek: number
-    isWeekEven: boolean
-    from: string
-    to: string
-}
 
-export interface Cabinet2 {
-    cabinetId: number
-    address: string
-    number: string
-}
-
-export interface Teacher2 {
-    teacherId: number
-    surname: string
-    firstName: string
-    middleName: string
-}
-
-export interface Subject2 {
-    subjectId: number
-    name: string
-}

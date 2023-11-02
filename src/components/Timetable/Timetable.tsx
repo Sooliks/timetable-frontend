@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import DayOfWeek from "./DayOfWeek";
 
 
@@ -7,6 +7,11 @@ type TimetableProps = {
 }
 
 const Timetable: React.FC<TimetableProps> = ({currentGroupId}) => {
+    useEffect(()=>{
+
+    },[])
+
+
     return (
         <div style={{width: '100vw'}}>
             {currentGroupId !== null &&
