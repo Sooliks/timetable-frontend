@@ -24,33 +24,37 @@ const TimetableGroup: React.FC<TimetableGroupProps> = ({timetable}) => {
     }
     const getLessonNumberByIndex = (index: number): number => {
         let lessonNumber: number = -1;
-        let indexDayOfWeek: number = 0;
+        let indexes: number[] = []
         for(let i=0;i<indexesDayOfWeek.length;i++){
-            for(let j=0;j<5;j++){
-                if(indexesDayOfWeek[i][j] === index){
-                    indexDayOfWeek = i;
-                    console.log(indexDayOfWeek)
+            for(let j=indexesDayOfWeek[i][0];j<indexesDayOfWeek[i][1];j++){
+                if(indexesDayOfWeek[i][j]===index){
+                    indexes=[i,j];
                     break
                 }
             }
         }
-        for(let i=indexesDayOfWeek[indexDayOfWeek][0]; i<=index;i++){
+        for(let i=indexes[0]; i<=indexes[1];i++){
             lessonNumber++;
         }
         return lessonNumber;
     }
     const [leassons,setLeassons] = useState<React.ReactNode[]>([])
     useEffect(()=>{
+        let lessonNumber = 0;
         let _leassons: React.ReactNode[] = [];
         for(let i=0; i<30; i++){
             let dayOfWeekNumber = getDayOfWeekByIndex(i);
-            let lessonNumber = getLessonNumberByIndex(i);
             const timetableCell = timetable?.timetableCells.find(t=>t.lessonTime.dayOfWeek === dayOfWeekNumber && t.lessonTime.lessonNumber === lessonNumber);
+            if(lessonNumber>5){
+                lessonNumber=0;
+            }
             if(timetableCell!==undefined){
                 _leassons = [..._leassons,<Lesson lesson={timetableCell}/>]
+                lessonNumber++;
                 continue
             }
             _leassons = [..._leassons,<Lesson lesson={null}/>]
+            lessonNumber++;
         }
         setLeassons(_leassons);
     },[timetable])
