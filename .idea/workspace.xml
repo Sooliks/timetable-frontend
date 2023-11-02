@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1edc857c-3ae3-4aec-bb20-7775efb4c8cf" name="Changes" comment="ready base">
+    <list default="true" id="1edc857c-3ae3-4aec-bb20-7775efb4c8cf" name="Changes" comment="ghghgh">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/global.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/global.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Timetable/DayOfWeek.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Timetable/DayOfWeek.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Timetable/Lesson.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Timetable/Lesson.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Timetable/Timetable.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Timetable/Timetable.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +76,7 @@
       <workItem from="1698822851788" duration="105000" />
       <workItem from="1698913270700" duration="20000" />
       <workItem from="1698914674296" duration="6198000" />
-      <workItem from="1698933400475" duration="31170000" />
+      <workItem from="1698933400475" duration="31814000" />
     </task>
     <task id="LOCAL-00001" summary="ghgh">
       <option name="closed" value="true" />
@@ -197,7 +198,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698965552828</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="ghghgh">
+      <option name="closed" value="true" />
+      <created>1698965920195</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1698965920195</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,8 +216,8 @@
     <MESSAGE value="ghgh" />
     <MESSAGE value="GJGJ" />
     <MESSAGE value="half ready" />
-    <MESSAGE value="ghghgh" />
     <MESSAGE value="ready base" />
-    <option name="LAST_COMMIT_MESSAGE" value="ready base" />
+    <MESSAGE value="ghghgh" />
+    <option name="LAST_COMMIT_MESSAGE" value="ghghgh" />
   </component>
 </project>

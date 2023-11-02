@@ -11,13 +11,17 @@ html, body {
 
 
 @font-face {
-    font-family: 'Maitree';
-    src: url('assets/fonts/MaitreeExtraLight.ttf');
+    font-family: Maitree;
+    src: url('assets/fonts/MaitreeExtraLight.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
-.p{
-    font-family: 'Maitree';
+p{
+    font-family: 'Maitree', sans-serif;
+}
+
+.text{
+    font-family: 'Maitree', sans-serif;
 }
 

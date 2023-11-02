@@ -16,7 +16,7 @@ const DayOfWeek: React.FC<DayOfWeekProps> = ({name}) => {
             justifyContent: 'center',
             marginBottom: '5.2vh'
         }}>
-            <p style={{fontFamily: 'Maitree', fontSize: '30px', color: 'white'}}>{name}</p>
+            <p style={{fontSize: '30px', color: 'white'}}>{name}</p>
         </div>
     );
 };
