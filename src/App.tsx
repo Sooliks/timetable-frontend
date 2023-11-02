@@ -6,7 +6,7 @@ import Timetable from "./components/Timetable/Timetable";
 import {useConfigContext} from "./context/ConfigContextProvider";
 
 function App() {
-    const [currentGroupId, setCurrentGroupId] = useState<number | null>(null)
+    const [currentGroupId, setCurrentGroupId] = useState<number | null>(1)
     const configContext = useConfigContext();
 
     return (

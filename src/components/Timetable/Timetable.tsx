@@ -1,4 +1,5 @@
 import React from 'react';
+import DayOfWeek from "./DayOfWeek";
 
 
 type TimetableProps = {
@@ -7,10 +8,16 @@ type TimetableProps = {
 
 const Timetable: React.FC<TimetableProps> = ({currentGroupId}) => {
     return (
-        <div>
+        <div style={{width: '100vw'}}>
             {currentGroupId !== null &&
-                <div>
-
+                <div style={{width: '100%'}}>
+                    <div style={{display: 'flex', justifyContent: 'end'}}>
+                        <div style={{width: '61.30vw', height: '81px', backgroundColor: '#373737', marginRight: '6.56vw', borderRadius: '10px'}}></div>
+                    </div>
+                    <div></div>
+                    <div style={{marginLeft: '11.09vw'}}>
+                        <DayOfWeek name={"ПН"}/>
+                    </div>
                 </div>
             }
         </div>
