@@ -19,7 +19,7 @@ const Header: React.FC<HeaderProps> = ({onChangeGroup}) => {
     const configContext = useConfigContext();
 
     return (
-        <div style={{height: '160px', width: '100vw', marginTop: '12px', display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
+        <div style={{height: '140px', width: '100vw', marginTop: '12px', display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
             <Select
                 style={{marginLeft: '12px', width: '10vw'}}
                 showSearch
