@@ -4,12 +4,10 @@ export type TimetableType = {
     groupId: number
     timetableCells: TimetableCell[]
 }
-
 interface Group {
     groupId: number
     name: string
 }
-
 export interface TimetableCell {
     timeTableCellId: number
     lessonTime: LessonTime

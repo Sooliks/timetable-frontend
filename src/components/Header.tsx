@@ -3,7 +3,6 @@ import {Button, Select} from "antd";
 import {useConfigContext} from "../context/ConfigContextProvider";
 import {BgColorsOutlined} from "@ant-design/icons";
 
-
 type HeaderProps = {
     onChangeGroup: (id: number) => void
 }
@@ -11,13 +10,11 @@ const Header: React.FC<HeaderProps> = ({onChangeGroup}) => {
     const onChange = (value: string) => {
         onChangeGroup((Number(value)));
     };
-
     const onSearch = (value: string) => {
 
     };
     const filterOption = (input: string, option?: { label: string; value: string }) => (option?.label ?? '').toLowerCase().includes(input.toLowerCase());
     const configContext = useConfigContext();
-
     return (
         <div style={{height: '110px', width: '100vw', marginTop: '12px', display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
             <Select
@@ -47,5 +44,4 @@ const Header: React.FC<HeaderProps> = ({onChangeGroup}) => {
         </div>
     );
 };
-
 export default Header;
