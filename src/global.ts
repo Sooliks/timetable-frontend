@@ -2,7 +2,7 @@ import {createGlobalStyle} from "styled-components";
 
 export const DarkThemeStyle = createGlobalStyle`
       body{
-        background: linear-gradient(-140deg,rgba(204, 255, 0, 0.45), rgba(255, 168, 0, 0.45), rgba(210, 0, 255, 0.45), rgba(97, 0, 255, 0.45)) no-repeat;
+        background: linear-gradient(-140deg,rgba(204, 255, 0, 45%), rgba(255, 168, 0, 45%), rgba(210, 0, 255, 45%), rgba(97, 0, 255, 45%)) no-repeat;
       }
 `;
 export const LightThemeStyle = createGlobalStyle`

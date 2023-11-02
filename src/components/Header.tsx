@@ -30,16 +30,8 @@ const Header: React.FC<HeaderProps> = ({onChangeGroup}) => {
                 filterOption={filterOption}
                 options={[
                     {
-                        value: 'jack',
-                        label: 'Jack',
-                    },
-                    {
-                        value: 'lucy',
-                        label: 'Lucy',
-                    },
-                    {
-                        value: 'tom',
-                        label: 'Tom',
+                        value: '656565656',
+                        label: '4ИП-2-20',
                     },
                 ]}
                 notFoundContent={"Не найдено"}
@@ -47,7 +39,7 @@ const Header: React.FC<HeaderProps> = ({onChangeGroup}) => {
             <div>
                 <Button
                     style={{marginRight: '12px'}}
-                    icon={configContext.config.currentTheme === 'dark' ? <BgColorsOutlined color={"#b86ad5"}/> : <BgColorsOutlined color={"#b86ad5"}/>}
+                    icon={configContext.config.currentTheme === 'dark' ? <BgColorsOutlined color={"#b86ad5"}/> : <BgColorsOutlined color={"#b271cc"}/>}
                     onClick={()=>configContext.setConfig({currentTheme: configContext.config.currentTheme === 'dark' ? 'light' : 'dark'})}
                 />
                 <Button style={{marginRight: '12px', width: '7vw'}}>Войти</Button>
