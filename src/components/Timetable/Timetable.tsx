@@ -4,6 +4,7 @@ import {TimetableType} from "../../types/timetable";
 import {TimetableAPI} from "../../http/api/TimetableAPI";
 import Lesson from "./Lesson";
 import {Typography} from "antd";
+import TimetableGroup from "./TimetableGroup";
 
 const {Text} = Typography;
 
@@ -47,7 +48,7 @@ const Timetable: React.FC<TimetableProps> = ({currentGroupId}) => {
             {currentGroupId !== null &&
                 <div style={{width: '100%'}}>
                     <div style={{display: 'flex', justifyContent: 'end'}}>
-                        <div style={{display: 'flex', justifyContent: 'space-around',width: '61.30vw', height: '81px', backgroundColor: '#373737', marginRight: '6.56vw', borderRadius: '10px'}}>
+                        <div style={{display: 'flex', justifyContent: 'space-around',width: '63.65vw', height: '81px', backgroundColor: '#373737', marginRight: '4.36vw', borderRadius: '10px'}}>
                             {schedules.map((schedule,index)=>
                                 <div style={{height: '100%', borderRight: index === 4 ? undefined : '2px solid #7F7B7B', width: 227, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
                                     <Text style={{color: 'white', fontSize: 30}}>{schedule.name}</Text>
@@ -65,9 +66,7 @@ const Timetable: React.FC<TimetableProps> = ({currentGroupId}) => {
                             <DayOfWeek name={"ПТ"}/>
                         </div>
                         <div style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap', marginTop: '26px', marginLeft: '44px'}}>
-                            {timetable?.timetableCells.map(timetable=>
-                                <Lesson />
-                            )}
+                            <TimetableGroup timetable={timetable}/>
                         </div>
                     </div>
                 </div>
