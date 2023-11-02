@@ -24,18 +24,18 @@ const Lesson: React.FC<LessonProps> = ({lesson}) => {
         }}>
             {lesson!==null &&
                 <div style={{display: 'flex', justifyContent: 'space-between'}}>
-                    <Text style={{fontFamily: 'Maitree', fontSize: '15pt', color: "white"}}>{lesson?.subject.name}</Text>
+                    <Text style={{fontFamily: 'Maitree', fontSize: '15pt', color: "white", marginLeft: '10px'}}>{lesson?.subject.name}</Text>
                     {lesson?.isReplaced &&
                         <Replace/>
                     }
                 </div>
             }
             {lesson!==null &&
-                <div style={{width: '100%', display: 'flex', justifyContent: 'space-between'}}>
-                    <Text style={{fontFamily: 'Maitree', fontSize: '15pt', color: lesson?.isReplaced ? '#574FB7' : 'white'}}>
-                        {lesson?.isReplaced ? lesson!.replacingTimeTableCell?.cabinet.address : lesson!.cabinet.number}
+                <div style={{width: '100%', display: 'flex', justifyContent: 'space-between', marginBottom: '4px'}}>
+                    <Text style={{fontFamily: 'Maitree', fontSize: '15pt', color: lesson?.isReplaced ? '#574FB7' : 'white', marginLeft: '10px'}}>
+                        {lesson?.isReplaced ? lesson!.replacingTimeTableCell?.cabinet.number : lesson!.cabinet.number}
                     </Text>
-                    <Text style={{fontFamily: 'Maitree', fontSize: '15pt', color: lesson?.isReplaced ? '#574FB7' : 'white'}}>
+                    <Text style={{fontFamily: 'Maitree', fontSize: '15pt', color: lesson?.isReplaced ? '#574FB7' : 'white', marginRight: '10px'}}>
                         {
                             lesson?.isReplaced ?
                                 lesson!.replacingTimeTableCell?.teacher.surname + ' ' + lesson!.replacingTimeTableCell?.teacher.firstName[0] + '.' + lesson!.replacingTimeTableCell?.teacher.middleName[0]

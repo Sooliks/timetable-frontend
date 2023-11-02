@@ -8,7 +8,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Timetable/CancelAndReplace/Replace.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Timetable/CancelAndReplace/Replace.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Timetable/Lesson.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Timetable/Lesson.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Timetable/Timetable.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Timetable/Timetable.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Timetable/TimetableGroup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Timetable/TimetableGroup.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +75,7 @@
       <workItem from="1698822851788" duration="105000" />
       <workItem from="1698913270700" duration="20000" />
       <workItem from="1698914674296" duration="6198000" />
-      <workItem from="1698933400475" duration="28098000" />
+      <workItem from="1698933400475" duration="29453000" />
     </task>
     <task id="LOCAL-00001" summary="ghgh">
       <option name="closed" value="true" />
@@ -174,7 +173,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698960777191</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="half ready">
+      <option name="closed" value="true" />
+      <created>1698962769163</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1698962769163</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
