@@ -8,7 +8,11 @@ type TimetableProps = {
 const Timetable: React.FC<TimetableProps> = ({currentGroupId}) => {
     return (
         <div>
+            {currentGroupId !== null &&
+                <div>
 
+                </div>
+            }
         </div>
     );
 };

@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import {ConfigProvider} from "antd";
-import ThemeContextProvider from "./context/ThemeContextProvider";
+import ConfigContextProvider from "./context/ConfigContextProvider";
 
 
 const root = ReactDOM.createRoot(
@@ -13,16 +13,16 @@ root.render(
       componentSize={"large"}
       theme={{
           token: {
-              colorPrimary: '#c77cf6',
-              colorBgContainer: '#d6a0f8',
+              colorPrimary: '#8335b4',
+              colorBgContainer: '#c37afc',
               colorBgBase: '#b86ad5',
-              colorBorder: '#b86ad5'
+              colorBorder: '#a528d2'
           },
       }}
   >
-      <ThemeContextProvider>
+      <ConfigContextProvider>
         <App/>
-      </ThemeContextProvider>
+      </ConfigContextProvider>
   </ConfigProvider>
 );
 

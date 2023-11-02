@@ -3,7 +3,7 @@ import {DarkThemeStyle, LightThemeStyle} from "./global";
 import './Main.css'
 import Header from "./components/Header";
 import Timetable from "./components/Timetable/Timetable";
-import {useConfigContext} from "./context/ThemeContextProvider";
+import {useConfigContext} from "./context/ConfigContextProvider";
 
 function App() {
     const [currentGroupId, setCurrentGroupId] = useState<number | null>(null)

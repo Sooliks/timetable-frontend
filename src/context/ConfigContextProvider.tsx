@@ -21,7 +21,7 @@ export const defaultConfig: ConfigType = {
     currentTheme: "dark"
 }
 
-const ThemeContextProvider = ({children}: ConfigContextProviderProps) => {
+const ConfigContextProvider = ({children}: ConfigContextProviderProps) => {
     const [config,setConfig] = useState<ConfigType>(defaultConfig);
 
     return (
@@ -29,4 +29,4 @@ const ThemeContextProvider = ({children}: ConfigContextProviderProps) => {
     );
 };
 
-export default ThemeContextProvider;
+export default ConfigContextProvider;
