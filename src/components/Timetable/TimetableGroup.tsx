@@ -3,7 +3,7 @@ import {TimetableType} from "../../types/timetable";
 import Lesson from "./Lesson";
 
 type TimetableGroupProps = {
-    timetable?: TimetableType
+    timetable: TimetableType
 }
 
 const TimetableGroup: React.FC<TimetableGroupProps> = ({timetable}) => {
@@ -25,14 +25,15 @@ const TimetableGroup: React.FC<TimetableGroupProps> = ({timetable}) => {
     const getLessonNumberByIndex = (index: number): number => {
         let lessonNumber: number = -1;
         let indexDayOfWeek: number = 0;
-        for(let i=0;i<5;i++){
+        for(let i=0;i<indexesDayOfWeek.length;i++){
             for(let j=0;j<30;j++){
                 if(indexesDayOfWeek[i][j] === index){
                     indexDayOfWeek = i;
+                    break
                 }
             }
         }
-        for(let i=indexesDayOfWeek[indexDayOfWeek][0]; i<indexesDayOfWeek[indexDayOfWeek][1];i++){
+        for(let i=indexesDayOfWeek[indexDayOfWeek][0]; i<=index;i++){
             lessonNumber++;
         }
         return lessonNumber;
@@ -40,19 +41,22 @@ const TimetableGroup: React.FC<TimetableGroupProps> = ({timetable}) => {
 
     const [leassons,setLeassons] = useState<React.ReactNode[]>([])
     useEffect(()=>{
+        console.log(timetable)
         let _leassons: React.ReactNode[] = [];
-        for(let i=0;i<30;i++){
+        for(let i=0; i<30; i++){
             let dayOfWeekNumber = getDayOfWeekByIndex(i);
+            console.log('day: '+dayOfWeekNumber)
             let lessonNumber = getLessonNumberByIndex(i);
+            console.log('lessonNumber: '+lessonNumber)
             const timetableCell = timetable?.timetableCells.find(t=>t.lessonTime.dayOfWeek === dayOfWeekNumber && t.lessonTime.lessonNumber === lessonNumber);
             if(timetableCell!==undefined){
                 _leassons = [..._leassons,<Lesson lesson={timetableCell}/>]
-                return
+                continue
             }
             _leassons = [..._leassons,<Lesson lesson={null}/>]
         }
         setLeassons(_leassons);
-    },[])
+    },[timetable])
 
     return (
         <div style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap'}}>

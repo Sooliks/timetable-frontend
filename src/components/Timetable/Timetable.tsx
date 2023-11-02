@@ -22,7 +22,7 @@ type ScheduleType = {
 }
 
 const Timetable: React.FC<TimetableProps> = ({currentGroupId}) => {
-    const [timetable,setTimetable] = useState<TimetableType>()
+    const [timetable,setTimetable] = useState<TimetableType>(exampleTimetableJson)
     const schedules: ScheduleType[] = [
         {name: '1 Пара', from: '9:00', to: '10:30'},
         {name: '2 Пара', from: '10:50', to: '12:20'},
@@ -38,7 +38,6 @@ const Timetable: React.FC<TimetableProps> = ({currentGroupId}) => {
             }).catch(e=>{
 
             })*/
-            setTimetable(exampleTimetableJson);
         }
     },[])
 
@@ -50,7 +49,7 @@ const Timetable: React.FC<TimetableProps> = ({currentGroupId}) => {
                     <div style={{display: 'flex', justifyContent: 'end'}}>
                         <div style={{display: 'flex', justifyContent: 'space-around',width: '63.65vw', height: '81px', backgroundColor: '#373737', marginRight: '4.36vw', borderRadius: '10px'}}>
                             {schedules.map((schedule,index)=>
-                                <div style={{height: '100%', borderRight: index === 4 ? undefined : '2px solid #7F7B7B', width: 227, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
+                                <div key={index} style={{height: '100%', borderRight: index === 4 ? undefined : '2px solid #7F7B7B', width: 227, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
                                     <Text style={{color: 'white', fontSize: 30}}>{schedule.name}</Text>
                                     <Text style={{color: 'white', fontSize: 25}}>{schedule.from + ' - ' + schedule.to}</Text>
                                 </div>
