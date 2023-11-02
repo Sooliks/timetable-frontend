@@ -3,10 +3,10 @@ import Replace from "./CancelAndReplace/Replace";
 import {Typography} from "antd";
 
 type LessonProps = {
-    title: string
-    cabinet: number
-    teacher: string
-    isReplaced: boolean
+    title?: string
+    cabinet?: number
+    teacher?: string
+    isReplaced?: boolean
 }
 const {Text} = Typography;
 
@@ -20,7 +20,8 @@ const Lesson: React.FC<LessonProps> = ({title, cabinet, teacher, isReplaced}) =>
             borderRadius: 10,
             display: 'flex',
             flexDirection: 'column',
-            justifyContent: 'space-between'
+            justifyContent: 'space-between',
+            marginRight: '26.54px'
         }}>
             <div style={{display: 'flex', justifyContent: 'space-between'}}>
                 <Text style={{fontFamily: 'Maitree', fontSize: '15pt'}}>{title}</Text>
@@ -29,8 +30,8 @@ const Lesson: React.FC<LessonProps> = ({title, cabinet, teacher, isReplaced}) =>
                 }
             </div>
             <div style={{width: '100%', display: 'flex', justifyContent: 'space-between'}}>
-                <Text style={{fontFamily: 'Maitree', fontSize: '15pt'}}>{cabinet}</Text>
-                <Text style={{fontFamily: 'Maitree', fontSize: '15pt'}}>{teacher}</Text>
+                <Text style={{fontFamily: 'Maitree', fontSize: '15pt', color: isReplaced ? '#574FB7' : undefined}}>{cabinet}</Text>
+                <Text style={{fontFamily: 'Maitree', fontSize: '15pt', color: isReplaced ? '#574FB7' : undefined}}>{teacher}</Text>
             </div>
         </div>
     );

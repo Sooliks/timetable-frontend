@@ -4,6 +4,7 @@ import {TimetableType} from "../../types/timetable";
 
 export namespace TimetableAPI {
     export const getTimetableGroup = async (id: number): Promise<TimetableType> => {
-        return await $client.get(`/timetable/get?groupId=${id}`);
+        const {data} = await $client.get(`/timetable/get?groupId=${id}`);
+        return data;
     }
 }
