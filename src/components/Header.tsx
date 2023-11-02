@@ -6,7 +6,6 @@ type HeaderProps = {
     onChangeGroup: (id: number) => void
 }
 const Header: React.FC<HeaderProps> = ({onChangeGroup}) => {
-
     const onChange = (value: string) => {
         onChangeGroup((Number(value)));
     };
@@ -18,10 +17,11 @@ const Header: React.FC<HeaderProps> = ({onChangeGroup}) => {
 
 
     return (
-        <div style={{height: '160px', width: '100vw'}}>
+        <div style={{height: '160px', width: '100vw', marginTop: '12px'}}>
             <Select
+                style={{marginLeft: '12px'}}
                 showSearch
-                placeholder="Select a person"
+                placeholder="Выберите группу"
                 optionFilterProp="children"
                 onChange={onChange}
                 onSearch={onSearch}
@@ -40,6 +40,7 @@ const Header: React.FC<HeaderProps> = ({onChangeGroup}) => {
                         label: 'Tom',
                     },
                 ]}
+                notFoundContent={"Не найдено"}
             />
         </div>
     );
