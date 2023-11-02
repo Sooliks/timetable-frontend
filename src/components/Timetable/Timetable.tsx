@@ -17,6 +17,10 @@ const Timetable: React.FC<TimetableProps> = ({currentGroupId}) => {
                     <div></div>
                     <div style={{marginLeft: '11.09vw'}}>
                         <DayOfWeek name={"ПН"}/>
+                        <DayOfWeek name={"ВТ"}/>
+                        <DayOfWeek name={"СР"}/>
+                        <DayOfWeek name={"ЧТ"}/>
+                        <DayOfWeek name={"ПТ"}/>
                     </div>
                 </div>
             }

@@ -1,16 +1,16 @@
-export type TimetableType = {
+export interface Timetable {
     timetableId: number
-    group: GroupType
+    group: Group
     groupId: number
-    timetableCells: TimetableCellType[]
+    timetableCells: TimetableCell[]
 }
 
-export type GroupType = {
+export interface Group {
     groupId: number
     name: string
 }
 
-export type TimetableCellType = {
+export interface TimetableCell {
     timeTableCellId: number
     lessonTime: LessonTime
     lessonTimeId: number
@@ -21,24 +21,22 @@ export type TimetableCellType = {
     subject: Subject
     subjectId: number
     isReplaced: boolean
-    replacingTimeTableCell: any
+    replacingTimeTableCell?: ReplacingTimeTableCell
 }
 
-export type LessonTime = {
+export interface LessonTime {
     lessonTimeId: number
     lessonNumber: number
     dayOfWeek: number
     isWeekEven: boolean
     from: string
     to: string
-    timetableCells: any
 }
 
 export interface Cabinet {
     cabinetId: number
     address: string
     number: string
-    timetableCells: any
 }
 
 export interface Teacher {
@@ -46,11 +44,50 @@ export interface Teacher {
     surname: string
     firstName: string
     middleName: string
-    timetableCells: any
 }
 
 export interface Subject {
     subjectId: number
     name: string
-    timetableCells: any
+}
+
+export interface ReplacingTimeTableCell {
+    timeTableCellId: number
+    lessonTime: LessonTime2
+    lessonTimeId: number
+    cabinet: Cabinet2
+    cabinetId: number
+    teacher: Teacher2
+    teacherId: number
+    subject: Subject2
+    subjectId: number
+    isReplaced: boolean
+    replacingTimeTableCell: any
+}
+
+export interface LessonTime2 {
+    lessonTimeId: number
+    lessonNumber: number
+    dayOfWeek: number
+    isWeekEven: boolean
+    from: string
+    to: string
+}
+
+export interface Cabinet2 {
+    cabinetId: number
+    address: string
+    number: string
+}
+
+export interface Teacher2 {
+    teacherId: number
+    surname: string
+    firstName: string
+    middleName: string
+}
+
+export interface Subject2 {
+    subjectId: number
+    name: string
 }
