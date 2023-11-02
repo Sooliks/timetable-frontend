@@ -1,5 +1,6 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import DayOfWeek from "./DayOfWeek";
+import {TimetableType} from "../../types/timetable";
 
 
 type TimetableProps = {
@@ -7,6 +8,11 @@ type TimetableProps = {
 }
 
 const Timetable: React.FC<TimetableProps> = ({currentGroupId}) => {
+    const [timetable,setTimetable] = useState<TimetableType>(
+
+    )
+
+
     useEffect(()=>{
 
     },[])
@@ -26,6 +32,9 @@ const Timetable: React.FC<TimetableProps> = ({currentGroupId}) => {
                         <DayOfWeek name={"СР"}/>
                         <DayOfWeek name={"ЧТ"}/>
                         <DayOfWeek name={"ПТ"}/>
+                    </div>
+                    <div>
+
                     </div>
                 </div>
             }

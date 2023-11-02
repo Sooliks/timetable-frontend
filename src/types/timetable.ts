@@ -5,12 +5,12 @@ export type TimetableType = {
     timetableCells: TimetableCell[]
 }
 
-export interface Group {
+interface Group {
     groupId: number
     name: string
 }
 
-export interface TimetableCell {
+interface TimetableCell {
     timeTableCellId: number
     lessonTime: LessonTime
     lessonTimeId: number
@@ -24,7 +24,7 @@ export interface TimetableCell {
     replacingTimeTableCell?: ReplacingTimeTableCell
 }
 
-export interface LessonTime {
+interface LessonTime {
     lessonTimeId: number
     lessonNumber: number
     dayOfWeek: number
@@ -33,24 +33,24 @@ export interface LessonTime {
     to: string
 }
 
-export interface Cabinet {
+interface Cabinet {
     cabinetId: number
     address: string
     number: string
 }
 
-export interface Teacher {
+interface Teacher {
     teacherId: number
     surname: string
     firstName: string
     middleName: string
 }
 
-export interface Subject {
+interface Subject {
     subjectId: number
     name: string
 }
-export interface ReplacingTimeTableCell {
+interface ReplacingTimeTableCell {
     timeTableCellId: number
     lessonTime: LessonTime
     lessonTimeId: number
