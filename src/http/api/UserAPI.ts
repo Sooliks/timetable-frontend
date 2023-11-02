@@ -14,9 +14,12 @@ export namespace UserAPI {
     export const tokenRevoke = async (refreshToken: string): Promise<AxiosResponse> => {
         return await $client.post('/account/token/revoke', {refreshToken});
     } 
-    export const sendCode = async (userEmail: string): Promise<AxiosResponse> => {
-        return await $clientAuth.post('/account/register/send-email', {userEmail});
-    } 
+    export const confirmEmailRegistration = async (email: string, approvalCode: number): Promise<AxiosResponse> => {
+        return await $clientAuth.post('/account/register/confirm', {email,approvalCode});
+    }
+    export const sendCodeOnEmail = async (email: string): Promise<AxiosResponse> => {
+        return await $clientAuth.post('/account/register/send-email', {email});
+    }
     export const globalLogout = async (): Promise<AxiosResponse> => {
         return await $clientAuth.post('/account/global-logout');
     } 

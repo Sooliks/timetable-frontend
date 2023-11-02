@@ -1,4 +1,4 @@
-import axios, {AxiosError, AxiosResponse,InternalAxiosRequestConfig} from "axios";
+import axios, {AxiosResponse,InternalAxiosRequestConfig} from "axios";
 import {Config} from "../conf";
 import { cookies } from "../data/cookies/cookies";
 const $client = axios.create({
@@ -14,7 +14,7 @@ const authInterceptor = (config: InternalAxiosRequestConfig) => {
 $clientAuth.interceptors.request.use(authInterceptor)
 $clientAuth.interceptors.response.use((res: AxiosResponse)=>{
     return res;
-}, (error: AxiosError) => {
+}, (error) => {
     if (error.response!.status === 401) {
         window.location.replace('/profile');
     }
@@ -22,7 +22,7 @@ $clientAuth.interceptors.response.use((res: AxiosResponse)=>{
 })
 $client.interceptors.response.use((res: AxiosResponse)=>{
     return res;
-}, (error: AxiosError) => {
+}, (error) => {
     return Promise.reject(error);
 })
 
