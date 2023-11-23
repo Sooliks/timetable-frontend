@@ -38,7 +38,7 @@ const TimetableGroup: React.FC<TimetableGroupProps> = ({timetable}) => {
 
     return (
         <div style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap'}}>
-            {leassons.map(leasson=> leasson)}
+            {leassons}
         </div>
     );
 };
